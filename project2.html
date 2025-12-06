@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Code Display</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        pre {
+            background: #1e1e1e;
+            color: #dcdcdc;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Your Python Turtle Code</h2>
+
+<pre><code>
+from turtle import *
+
+# speed up drawing
+speed(8)
+
+# color background sky blue
+bgcolor("light blue")
+
+# draw and color a plot of grass
+current_y = 0
+if current_y > 15:
+    color("forest green")
+else:
+    color("green")
+
+begin_fill()
+
+goto(200,0)
+
+left(90)
+forward(30)
+left(90)
+forward(450)
+left(90)
+forward(30)
+left(90)
+forward(250)
+
+end_fill()
+
+penup()
+goto(40,30)
+pendown()
+
+left(90)
+
+# draw and color the base of a house
+color("saddle brown")
+begin_fill()
+for i in range (3):
+    forward(100)
+    left(90)
+end_fill()
+
+goto(40,130)
+
+# draw and color a triangular roof for the house
+color("brown")
+begin_fill()
+for i in range(2):
+    left(120)
+    forward(100)
+end_fill()
+
+# draw and color a circular bush to the right of the house
+color("forest green")
+penup()
+goto(37,70)
+pendown()
+begin_fill()
+circle(27)
+end_fill()
+
+# draw and color another circular bush to the left of the house
+color("forest green")
+penup()
+goto(-106,70)
+pendown()
+begin_fill()
+circle(27)
+end_fill()
+
+penup()
+goto(-170,300)
+pendown()
+left(30)
+
+# drawing and coloring clouds in the sky
+cloud_size = 100
+x = cloud_size
+
+color("white")
+begin_fill()
+for i in range(2):
+    forward(50)
+    left(90)
+    forward(x)
+    left(90)
+end_fill()
+
+penup()
+goto(90,240)
+pendown()
+
+color("white")
+begin_fill()
+for i in range(2):
+    forward(50)
+    left(90)
+    forward(x)
+    left(90)
+end_fill()
+
+penup()
+goto(30,330)
+pendown()
+
+color("white")
+begin_fill()
+for i in range(2):
+    forward(50)
+    left(90)
+    forward(x)
+    left(90)
+end_fill()
+
+penup()
+goto(300,330)
+pendown()
+
+# drawing a coloring a sun at the top right
+color("yellow")
+begin_fill()
+circle(60)
+end_fill()
+
+penup()
+goto(200,30)
+pendown()
+left(180)
+
+# drawing and coloring a tree trunk to the right of the house
+color("saddle brown")
+begin_fill()
+for i in range(2):
+    forward(80)
+    left(90)
+    forward(30)
+    left(90)
+end_fill()
+
+penup()
+goto(215,135)
+pendown()
+
+# drawing and coloring tree foliage
+color("green")
+begin_fill()
+circle(30)
+end_fill()
+
+penup()
+goto(-220,30)
+pendown()
+
+# tree trunk on left
+color("saddle brown")
+begin_fill()
+for i in range(2):
+    forward(80)
+    left(90)
+    forward(30)
+    left(90)
+end_fill()
+
+penup()
+goto(-205,135)
+pendown()
+
+# tree foliage on left
+color("green")
+begin_fill()
+circle(30)
+end_fill()
+
+done()
+</code></pre>
+
+</body>
+</html>
